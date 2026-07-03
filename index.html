@@ -1,6 +1,6 @@
 <script>
 
-function showMessage(){
+function showMessage() {
 
 document.querySelector("h1").style.display = "none";
 
@@ -8,12 +8,11 @@ document.querySelector(".subtitle").style.display = "none";
 
 document.querySelector("button").style.display = "none";
 
-document.getElementById("secret")
-.classList.remove("hidden");
+document.getElementById("secret").classList.remove("hidden");
 
 }
 
-for(let i = 0; i < 30; i++){
+for (let i = 0; i < 30; i++) {
 
 let heart = document.createElement("div");
 
@@ -23,8 +22,7 @@ heart.innerHTML = "💗";
 
 heart.style.left = Math.random() * 100 + "vw";
 
-heart.style.animationDuration =
-(Math.random() * 5 + 4) + "s";
+heart.style.animationDuration = (Math.random() * 5 + 4) + "s";
 
 heart.style.opacity = Math.random();
 
